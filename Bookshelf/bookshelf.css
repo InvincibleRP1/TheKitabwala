@@ -149,6 +149,7 @@ body{
 }
 
 
+/* Side navigation bar */
 .sidenav{
     position: fixed;
     display: inline-block;
@@ -199,9 +200,11 @@ body{
 .orders li{
     list-style: none;
 }
+
+/* bestseller novels */
 .novelofm{
     text-align: center;
-    display: list-item;
+    display: list-item;                             /* for the style of the headings */
     justify-content: right;
     font-size: 25px;
     font-weight: bolder;
@@ -234,6 +237,7 @@ body{
     transform: translateX(20px) translateY(5px);
     transition: transform 1s;
 }
+/* add to cart buttons */
 .crt{
     float: right;
     background-color: peru;
@@ -246,7 +250,7 @@ body{
     background-color:green;
     cursor: pointer;
 }
-
+/* bestseller thrillers */
 .throfm{
     text-align: center;
     display: list-item;
@@ -285,6 +289,8 @@ body{
     transform: translateX(20px) translateY(5px);
     transition: transform 1s;
 }
+
+/* bestseller adventures */
 .adofm{
     text-align: center;
     display: list-item;
@@ -323,6 +329,7 @@ body{
     transform: translateX(20px) translateY(5px);
     transition: transform 1s;
 }
+/* bestseller biographies */
 
 .biob{
     margin-top: 490px;
@@ -363,6 +370,7 @@ body{
     transition: transform 1s;
 }
 
+/* bestseller school,college books */
 .colschofm{
     text-align: center;
     display: list-item;
