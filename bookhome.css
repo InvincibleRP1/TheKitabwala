@@ -366,6 +366,8 @@
     /* text-shadow: 0.5px 0.5px 0.5px red; */
 
     font-size: 25px;
+    word-spacing: 5px;
+    letter-spacing: 2.5px;
     font-weight: bold;
     font-family: 'Special Elite', cursive;
 }
