@@ -85,6 +85,8 @@
 
 
     <div class="schoolbooks">
+        <div class="cover">School-Books</div>
+        <div class="cover"></div>
         <div id="kitabs1">
             <span id="nv">
                 <img src="images/sch1.jpg" width="120px">
@@ -174,17 +176,16 @@
                 <button class="crt">Add to cart</button>
             </span>
         </div>
+        <div class="cover"></div>
+        <div class="cover"></div>
 
     </div>
-    <div class="hard">
-        <p id=arrow>School-Books
-            <i class="fa fa-arrow-circle-right"></i>
-        </p>
-        
+    <div class="flip-control">
+        <a href="#" id="prev"> Previous </a>
+        <a href="#" id="next"> Next </a>
     </div>
     <script>
-        jQuery(document).ready(function () {
-            $('.schoolbooks').turn({
+           var oturn= $('.schoolbooks').turn({
                 //display: 'double',
                 width: 1150,
                 height: 600,
@@ -202,7 +203,16 @@
                 //  	}
                 //  }
             })
+            $("#prev").click(function (e) {
+            e.preventDefault();
+            oturn.turn("previous");
         });
+
+        $("#next").click(function (e) {
+            e.preventDefault();
+            oturn.turn("next");
+        });
+        
     </script>
 
 

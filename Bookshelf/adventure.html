@@ -85,24 +85,26 @@
 
 
     <div class="adventure">
+        <div class="cover">Adventure</div>
+        <div class="cover"></div>
         <div id="kitabs1">
             <span id="nv">
-                <img src="images/ad1.jpg" width="120px">
+                <img src="../Bookshelf/images/ad1.jpg" width="120px">
                 <p>Rs:450.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad10.jpg" width="120px">
+                <img src="../Bookshelf/images/ad10.jpg" width="120px">
                 <p>Rs:560.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad11.jpg" width="120px">
+                <img src="../Bookshelf/images/ad11.jpg" width="120px">
                 <p>Rs:270.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad12.jpg" width="120px">
+                <img src="../Bookshelf/images/ad12.jpg" width="120px">
                 <p>Rs:380.00</p>
                 <button class="crt">Add to cart</button>
             </span>
@@ -110,81 +112,80 @@
         </div>
         <div id="kitabs2">
             <span id="nv">
-                <img src="images/ad2.jpg" width="120px">
+                <img src="../Bookshelf/images/ad2.jpg" width="120px">
                 <p>Rs:450.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad3.jpg" width="120px">
+                <img src="../Bookshelf/images/ad3.jpg" width="120px">
                 <p>Rs:560.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad4.jpg" width="120px">
+                <img src="../Bookshelf/images/ad4.jpg" width="120px">
                 <p>Rs:270.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad5.jpg" width="120px">
+                <img src="../Bookshelf/images/ad5.jpg" width="120px">
                 <p>Rs:380.00</p>
                 <button class="crt">Add to cart</button>
             </span>
         </div>
         <div id="kitabs3">
             <span id="nv">
-                <img src="images/ad6.jpg" width="120px">
+                <img src="../Bookshelf/images/ad6.jpg" width="120px">
                 <p>Rs:450.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad7.jpg" width="120px">
+                <img src="../Bookshelf/images/ad7.jpg" width="120px">
                 <p>Rs:560.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad8.jpg" width="120px">
+                <img src="../Bookshelf/images/ad8.jpg" width="120px">
                 <p>Rs:270.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/ad9.jpg" width="120px">
+                <img src="../Bookshelf/images/ad9.jpg" width="120px">
                 <p>Rs:380.00</p>
                 <button class="crt">Add to cart</button>
             </span>
         </div>
         <div id="kitabs4">
             <span id="nv">
-                <img src="images/adv1.jpg" width="120px">
+                <img src="../Bookshelf/images/adv1.jpg" width="120px">
                 <p>Rs:450.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/adv2.jpg" width="120px">
+                <img src="../Bookshelf/images/adv2.jpg" width="120px">
                 <p>Rs:560.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/adv3.jpg" width="120px">
+                <img src="../Bookshelf/images/adv3.jpg" width="120px">
                 <p>Rs:270.00</p>
                 <button class="crt">Add to cart</button>
             </span>
             <span id="nv">
-                <img src="images/adv4.jpg" width="120px">
+                <img src="../Bookshelf/images/adv4.jpg" width="120px">
                 <p>Rs:380.00</p>
                 <button class="crt">Add to cart</button>
             </span>
         </div>
+        <div class="cover"></div>
+        <div class="cover"></div>
 
     </div>
-    <div class="hard">
-        <p id=arrow>Adventure
-            <i class="fa fa-arrow-circle-right"></i>
-        </p>
-        
+    <div class="flip-control">
+        <a href="#" id="prev"> Previous </a>
+        <a href="#" id="next"> Next </a>
     </div>
     <script>
-        jQuery(document).ready(function () {
-            $('.adventure').turn({
+            var oturn= $('.adventure').turn({
                 //display: 'double',
                 width: 1150,
                 height: 600,
@@ -202,7 +203,16 @@
                 //  	}
                 //  }
             })
+            $("#prev").click(function (e) {
+            e.preventDefault();
+            oturn.turn("previous");
         });
+
+        $("#next").click(function (e) {
+            e.preventDefault();
+            oturn.turn("next");
+        });
+        
     </script>
 
 

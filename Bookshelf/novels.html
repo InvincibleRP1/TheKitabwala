@@ -85,6 +85,8 @@
 
 
     <div class="novels">
+        <div class="cover">Novels</div>
+        <div class="cover"></div>
         <div id="kitabs1">
             <span id="nv">
                 <img src="images/novels1.jpg" width="120px">
@@ -174,35 +176,44 @@
                 <button class="crt">Add to cart</button>
             </span>
         </div>
+        <div class="cover"></div>
+        <div class="cover"></div>
 
     </div>
-    <div class="hard">
-        <p id=arrow>Novels 
-            <i class="fa fa-arrow-circle-right"></i>
-        </p>
-        
+    <div class="flip-control">
+        <a href="#" id="prev"> Previous </a>
+        <a href="#" id="next"> Next </a>
     </div>
     <script>
-        jQuery(document).ready(function () {
-            $('.novels').turn({
-                //display: 'double',
-                width: 1150,
-                height: 600,
-                acceleration: true,
-                gradients: !$.isTouch,
-                duration: 1000,
-                elevation: 20,
-                //page: 1,
-                autoCenter: true,
+        var oturn = $('.novels').turn({
+            //display: 'double',
+            width: 1150,
+            height: 600,
+            acceleration: true,
+            gradients: !$.isTouch,
+            duration: 1000,
+            elevation: 20,
+            //page: 1,
+            autoCenter: true,
 
 
-                // when: {
-                //  	turned: function(e, page) {
-                //  		console.log('Current view: ', $(this).turn('view'));
-                //  	}
-                //  }
-            })
+            // when: {
+            //  	turned: function(e, page) {
+            //  		console.log('Current view: ', $(this).turn('view'));
+            //  	}
+            //  }
+        })
+        $("#prev").click(function (e) {
+            e.preventDefault();
+            oturn.turn("previous");
         });
+
+        $("#next").click(function (e) {
+            e.preventDefault();
+            oturn.turn("next");
+        });
+
+
     </script>
 
 
