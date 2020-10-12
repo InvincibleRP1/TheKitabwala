@@ -78,7 +78,8 @@ border-bottom: #f33758;
   height: 285px;
   width: 200px;
   text-align: center;
-  background-color: rgb(192, 188, 188);
+  background-color: rgba(128, 128, 128, 0.8);
+  box-shadow: 8px 10px 5px #010b18e3;;
 }
 .image img {
   height: 200px;
@@ -88,7 +89,8 @@ border-bottom: #f33758;
   position: relative;
   /* width: 100%; */
   display: block;
-  background-color: lightgreen;
+  background-color: darkgreen;
+  color: antiquewhite;
   cursor: pointer;
   text-decoration: none;
   text-align: center;

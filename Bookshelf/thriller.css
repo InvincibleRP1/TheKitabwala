@@ -350,7 +350,10 @@ div.flip-control a {
     background: midnightblue;
     border-radius: 5px;
 }
-
+div.flip-control a:hover{
+    color: black;
+    background-color: lightgreen ;
+}
 
         /* padding: 0px; *
         width: 940px;
